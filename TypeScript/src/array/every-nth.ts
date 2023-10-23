@@ -3,7 +3,7 @@ type Options = {
   includeLast?: boolean;
 };
 
-function everyNth<T>(array: T[], nth: number, options?: Options) {
+export function everyNth<T>(array: T[], nth: number, options?: Options) {
   const result: T[] = [];
 
   if (options?.includeFirst) {
